@@ -31,15 +31,15 @@
         select.addEventListener('change', function(e){
             const options = e.currentTarget.options
             const index = e.currentTarget.options.selectedIndex
-            transVal = 
+            transVal = options[index].value   //선택한 select 박스의 value 
             calculate()
-
         })
 
         input.addEventListener('keyup', function(e){
             //입력받은 값을 가져온다.
+            currentVal = e.currentTarget.value
+            console.log(currentVal)
             //계산을 한다. 
-            currentVal = 
             calculate()
         })
     </script>
