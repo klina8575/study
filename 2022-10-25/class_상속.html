@@ -29,8 +29,8 @@
         }
 
         class Square extends Rectangle {
-            constructor (length, length2) {
-                // console.log(length, length2)
+            constructor (length, length2) { //생성자 함수
+                // console.log(length, length2) 
                 super(length, length2) //super: 부모의 생성자 함수를 호출한다.
             }
         }
@@ -43,9 +43,10 @@
 
         //자식클래스는 부모클래스에 있는 속성과 메소드를 쓸 수 있다.
         const square = new Square(10, 20)
-        console.log(square.width)
-        console.log(square.getPerimeter())
-        console.log(square.getArea())
+        console.log(`width: ${square.width}`)
+        console.log(`height: ${square.height}`)
+        console.log(`getPerimeter(): ${square.getPerimeter()}`)
+        console.log(`getArea(): ${square.getArea()}`)
     </script>
 </body>
 </html>
