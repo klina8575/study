@@ -3,6 +3,7 @@
 
 .wrap{
 	background: wheat;
+	padding-top: 60px;
 }
 
 section .con {
@@ -11,13 +12,39 @@ section .con {
 	height: 100%;
 }
 
-.slider{
+/* .slider{
 	height: 480px;
-}
+} */
 
 .slider__content {
 	background: thistle;
 }
+
+.slider__content .mySwiper {
+	width: 100%;
+	height: 600px;
+} 
+
+.slider__content .swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+  }
+
 
 .youtube{
 	height: 605px;
@@ -103,6 +130,10 @@ section .con {
 
 /* 테블릿: 767px 이상*/
 @media all and (min-width:767px){
+	.wrap{
+		padding-top: 120px;
+	}
+
 	.guide__content {
 		flex-direction: row;
 	}
