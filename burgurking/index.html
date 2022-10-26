@@ -4,23 +4,130 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
 <title>Document</title>
-<!-- https://www.starbucks.co.kr/index.do -->
-<link rel="stylesheet" href="./css/common.css">
+<link rel="stylesheet" href="./library/fontawesome-free-6.2.0-web/css/all.min.css">
+<link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
 	<header class="header">
-		<div class="header__nav">
-			<h1>logo</h1>
-			<nav>
-				<ul>
-					<li>메뉴소개</li>
-					<li>매장소개</li>
-					<li>이벤트</li>
-					<li>브랜드스토리</li>
+		<!-- 모바일 메뉴 -->
+		<div class="header__Mnav">
+			<div class="trigger">
+				<button class="mobile close"><i class="fas fa-times fa-lg"></i></button>
+			</div>
+			<nav class="Mmenu">
+				<ul class="Mmenu__main">
+					<li onclick="showHide(this)">
+						<span>메뉴소개</span>
+						<span><i class="fas fa-chevron-right"></i></span>
+						<ul class="Mlist__drop animate__animated animate__fadeIn">
+							<li><a href="#">스페셜&할인팩</a></li>
+							<li><a href="#">프리미엄</a></li>
+							<li><a href="#">와퍼</a></li>
+							<li><a href="#">주니어&버거</a></li>
+							<li><a href="#">올데이킹&치킨버거</a></li>
+							<li><a href="#">사이드</a></li>
+							<li><a href="#">음료&디저트</a></li>
+							<li><a href="#">독퍼</a></li>
+						</ul>
+					</li>
+					<li onclick="showHide(this)">
+						<span>매장소개</span>
+						<span><i class="fas fa-chevron-right"></i></span>
+						<ul class="Mlist__drop animate__animated animate__fadeIn">
+							<li><a href="#">매장찾기</a></li>
+						</ul>
+					</li>
+					<li onclick="showHide(this)">
+						<span>이벤트</span>
+						<span><i class="fas fa-chevron-right"></i></span>
+						<ul class="Mlist__drop animate__animated animate__fadeIn">
+							<li><a href="#">이벤트</a></li>
+							<li><a href="#">신규매장</a></li>
+						</ul>
+					</li>
+					<li onclick="showHide(this)">
+						<span>브랜드스토리</span>
+						<span><i class="fas fa-chevron-right"></i></span>
+						<ul class="Mlist__drop animate__animated animate__fadeIn">
+							<li><a href="#">버거킹 스토리</a></li>
+							<li><a href="#">WHY 버거킹</a></li>
+							<li><a href="#">버거킹 NEWS</a></li>
+						</ul>
+					</li>
+					<li onclick="showHide(this)">
+						<span>고객센터</span>
+						<span><i class="fas fa-chevron-right"></i></span>
+						<ul class="Mlist__drop animate__animated animate__fadeIn">
+							<li><a href="#">공지사항</a></li>
+							<li><a href="#">버거킹 앱이용안내</a></li>
+							<li><a href="#">FAQ</a></li>
+						</ul>
+					</li>
 				</ul>
 			</nav>
-			<div class="delivery-order">딜리버리 주문</div>
 		</div>
+		<!-- pc메뉴 -->
+		<div class="header__nav">
+			<div class="trigger">
+				<button class="mobile hamburger"><i class="fa-solid fa-bars"></i></button>
+			</div>
+			<h1>
+				<a href="./index.html">
+					<img src="./img/logo.gif" alt="로고" class="logo">
+				</a>
+			</h1>
+			<nav>
+				<ul class="menu__main">
+					<li class="main__list">
+						<a href="#">메뉴소개<i class="fa-solid fa-caret-down"></i></a>
+						<div>
+							<ul class="list__drop">
+								<li><a href="#">스페셜&할인팩</a></li>
+								<li><a href="#">프리미엄</a></li>
+								<li><a href="#">와퍼</a></li>
+								<li><a href="#">주니어&버거</a></li>
+								<li><a href="#">올데이킹&치킨버거</a></li>
+								<li><a href="#">사이드</a></li>
+								<li><a href="#">음료&디저트</a></li>
+								<li><a href="#">독퍼</a></li>
+							</ul>
+						</div> 
+					</li>
+					<li class="main__list">
+						<a href="#">매장소개<i class="fa-solid fa-caret-down"></i></a>
+						<div>
+							<ul class="list__drop">
+								<li><a href="#">매장찾기</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="main__list">
+						<a href="#">이벤트<i class="fa-solid fa-caret-down"></i></a>
+						<div>
+							<ul class="list__drop">
+								<li><a href="#">이벤트</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="main__list">
+						<a href="#">브랜드 스토리<i class="fa-solid fa-caret-down"></i></a>
+						<div>
+							<ul class="list__drop">
+								<li><a href="#">버거킹 스토리</a></li>
+								<li><a href="#">WHY 버거킹</a></li>
+								<li><a href="#">버거킹 NEWS</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</nav>
+			<div class="delivery-order">
+				<button class="button button--shape-red">
+					딜리버리 주문
+				</button>
+			</div>
+		</div>
+		<div class="header__panel"></div>
 	</header>
 	<div class="wrap">
 		<section class="slider">

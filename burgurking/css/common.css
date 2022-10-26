@@ -1,24 +1,36 @@
-.wrap{
-	background: wheat;
-}
+@charset "utf-8";
+@import url('./reset.css');
 
 /* 모바일: 0~766px */
 .header{
-
+	position: fixed;
+	width: 100%;
+	background: white;
+	z-index: 2;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
 }
 
 .header__nav {
 	max-width: 1200px;
-	background:#9de25c;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: row;
+	justify-content: space-between;
+	height: 60px;
+	align-items: center;
+	padding: 0 12px;
+}
+
+.header__nav > div, .header__nav > h1{
+	width: 33.33%;
 }
 
 .header__nav > h1{
-	width: 100px;
-	height: 120px;
-	background:#9de25c;
+	text-align: center;
+}
+
+.header__nav > h1 img{
+	width: 50px;
 }
 
 .header__nav > nav{
